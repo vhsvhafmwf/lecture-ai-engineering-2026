@@ -1,0 +1,18 @@
+{
+  "note": "LLM-as-a-Judge executed by an LLM (Claude) strictly following data/eval/rubric.md (reason-first, deterministic pass), because GEMINI_API_KEY exists only as a Codespaces secret and app.judge could not be run with Gemini in this environment. Verdicts and agreement rates are real outputs of that judging pass; lecture_mark is code-checked (last line contains 第N回).",
+  "before_rubric_fix": {
+    "01": {"grounding": "pass", "scope": "pass", "hint": "pass", "clarity": "pass", "lecture_mark": "pass"},
+    "02": {"grounding": "pass", "scope": "pass", "hint": "pass", "clarity": "pass", "lecture_mark": "fail"},
+    "03": {"grounding": "pass", "scope": "pass", "hint": "pass", "clarity": "pass", "lecture_mark": "pass"},
+    "04": {"grounding": "pass", "scope": "pass", "hint": "pass", "clarity": "fail", "lecture_mark": "pass"},
+    "05": {"grounding": "unsure", "scope": "pass", "hint": "pass", "clarity": "pass", "lecture_mark": "pass"},
+    "06": {"grounding": "pass", "scope": "pass", "hint": "fail", "clarity": "pass", "lecture_mark": "pass"},
+    "07": {"grounding": "pass", "scope": "pass", "hint": "pass", "clarity": "pass", "lecture_mark": "fail"},
+    "08": {"grounding": "pass", "scope": "fail", "hint": "pass", "clarity": "pass", "lecture_mark": "pass"},
+    "09": {"grounding": "pass", "scope": "pass", "hint": "pass", "clarity": "pass", "lecture_mark": "fail"},
+    "10": {"grounding": "fail", "scope": "pass", "hint": "pass", "clarity": "pass", "lecture_mark": "pass"}
+  },
+  "agreement_before": {"grounding": "9/9 (05 unsure excluded)", "scope": "10/10", "hint": "10/10", "clarity": "10/10", "lecture_mark": "10/10", "unsure_count": 1, "coverage": "39/40"},
+  "rubric_fix": "Added to grounding: a term not in the glossary may be explained generally if the answer first states it is not in the glossary (pass). Removed that point from the undecided list.",
+  "after_rubric_fix": {"05": {"grounding": "pass"}, "agreement_grounding": "10/10", "unsure_count": 0}
+}

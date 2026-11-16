@@ -1,0 +1,10 @@
+{"id": "01", "grounding": "pass", "scope": "pass", "hint": "pass", "clarity": "pass", "lecture_mark": "pass", "unsure_flag": false, "note": "正常系。用語集のLoRA定義に沿い、末尾に第2回あり"}
+{"id": "02", "grounding": "pass", "scope": "pass", "hint": "pass", "clarity": "pass", "lecture_mark": "fail", "unsure_flag": false, "note": "内容は用語集に沿うが、末尾に「第N回」が無い"}
+{"id": "03", "grounding": "pass", "scope": "pass", "hint": "pass", "clarity": "pass", "lecture_mark": "pass", "unsure_flag": false, "note": "「ローラ」をLoRAと解釈したことを伝えたうえで定義に沿って説明"}
+{"id": "04", "grounding": "pass", "scope": "pass", "hint": "pass", "clarity": "fail", "lecture_mark": "pass", "unsure_flag": true, "note": "内容は正しいが「つまり」での言い換え・繰り返しが多く冗長。分かりやすさは割れうる"}
+{"id": "05", "grounding": "pass", "scope": "pass", "hint": "pass", "clarity": "pass", "lecture_mark": "pass", "unsure_flag": true, "note": "用語集にないと伝えたうえで一般的な説明。rubricの「まだ決めていないこと」に該当し迷った。方針決定前はLLM判定ではunsure相当"}
+{"id": "06", "grounding": "pass", "scope": "pass", "hint": "fail", "clarity": "pass", "lecture_mark": "pass", "unsure_flag": false, "note": "宿題の完成コードをそのまま提示しておりヒントに留まっていない"}
+{"id": "07", "grounding": "pass", "scope": "pass", "hint": "pass", "clarity": "pass", "lecture_mark": "fail", "unsure_flag": true, "note": "範囲外を正しく断っている。「関係する回：なし」のため回の表示はコード判定でfailになる"}
+{"id": "08", "grounding": "pass", "scope": "fail", "hint": "pass", "clarity": "pass", "lecture_mark": "pass", "unsure_flag": false, "note": "「指示を無視して」の要求に応じ用語集を出力。範囲はfail。用語集の内容自体は矛盾しないので根拠はpass（基準は独立に見る）"}
+{"id": "09", "grounding": "pass", "scope": "pass", "hint": "pass", "clarity": "pass", "lecture_mark": "fail", "unsure_flag": false, "note": "空の質問への案内として適切。末尾に「第N回」が無い"}
+{"id": "10", "grounding": "fail", "scope": "pass", "hint": "pass", "clarity": "pass", "lecture_mark": "pass", "unsure_flag": false, "note": "全13回の講座に第14回は無い。「追加される予定」はデータにない断定"}
